@@ -4,7 +4,7 @@ import androidx.lifecycle.ViewModel
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 
-class BaseKotlinViewModel : ViewModel() {
+open class BaseKotlinViewModel : ViewModel() {
 
     private val compositeDisposable = CompositeDisposable()
 
