@@ -7,8 +7,8 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 
 var modelPart = module {
-    factory<MainViewModel.DataModel> {
-        MainViewModel.DataModelImpl()
+    factory<DataModel> {
+        DataModelImpl(get())
     }
 }
 
